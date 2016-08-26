@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DBBE0C751D70BACE00D22920 /* AccountInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBE0C741D70BACE00D22920 /* AccountInfoVC.swift */; };
+		DBE1C2A91D63BF7E00B8BD55 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE1C2A51D63BF7E00B8BD55 /* Fabric.framework */; };
+		DBE1C2AA1D63BF7E00B8BD55 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE1C2A61D63BF7E00B8BD55 /* TwitterKit.framework */; };
+		DBE1C2AB1D63BF7E00B8BD55 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DBE1C2A71D63BF7E00B8BD55 /* TwitterKitResources.bundle */; };
+		DBE1C2AC1D63BF7E00B8BD55 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE1C2A81D63BF7E00B8BD55 /* TwitterCore.framework */; };
+		DBE1C2B11D63C1C300B8BD55 /* TwitterFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE1C2B01D63C1C300B8BD55 /* TwitterFeedVC.swift */; };
 		DBFBDC081D639DF4005AC1C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFBDC071D639DF4005AC1C8 /* AppDelegate.swift */; };
 		DBFBDC0D1D639DF4005AC1C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFBDC0B1D639DF4005AC1C8 /* Main.storyboard */; };
 		DBFBDC101D639DF4005AC1C8 /* myMunicipality.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DBFBDC0E1D639DF4005AC1C8 /* myMunicipality.xcdatamodeld */; };
@@ -15,6 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DBBE0C741D70BACE00D22920 /* AccountInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountInfoVC.swift; sourceTree = "<group>"; };
+		DBE1C2A51D63BF7E00B8BD55 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		DBE1C2A61D63BF7E00B8BD55 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		DBE1C2A71D63BF7E00B8BD55 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		DBE1C2A81D63BF7E00B8BD55 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		DBE1C2B01D63C1C300B8BD55 /* TwitterFeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterFeedVC.swift; sourceTree = "<group>"; };
 		DBFBDC041D639DF4005AC1C8 /* myMunicipality.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myMunicipality.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBFBDC071D639DF4005AC1C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBFBDC0C1D639DF4005AC1C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,15 +41,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBE1C2A91D63BF7E00B8BD55 /* Fabric.framework in Frameworks */,
+				DBE1C2AC1D63BF7E00B8BD55 /* TwitterCore.framework in Frameworks */,
+				DBE1C2AA1D63BF7E00B8BD55 /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DBE1C2AD1D63C06C00B8BD55 /* Twitter */ = {
+			isa = PBXGroup;
+			children = (
+				DBE1C2A51D63BF7E00B8BD55 /* Fabric.framework */,
+				DBE1C2A61D63BF7E00B8BD55 /* TwitterKit.framework */,
+				DBE1C2A71D63BF7E00B8BD55 /* TwitterKitResources.bundle */,
+				DBE1C2A81D63BF7E00B8BD55 /* TwitterCore.framework */,
+			);
+			name = Twitter;
+			sourceTree = "<group>";
+		};
 		DBFBDBFB1D639DF4005AC1C8 = {
 			isa = PBXGroup;
 			children = (
+				DBE1C2AD1D63C06C00B8BD55 /* Twitter */,
 				DBFBDC061D639DF4005AC1C8 /* myMunicipality */,
 				DBFBDC051D639DF4005AC1C8 /* Products */,
 			);
@@ -54,8 +81,10 @@
 		DBFBDC061D639DF4005AC1C8 /* myMunicipality */ = {
 			isa = PBXGroup;
 			children = (
+				DBE1C2B01D63C1C300B8BD55 /* TwitterFeedVC.swift */,
 				DBFBDC071D639DF4005AC1C8 /* AppDelegate.swift */,
 				DBFBDC0B1D639DF4005AC1C8 /* Main.storyboard */,
+				DBBE0C741D70BACE00D22920 /* AccountInfoVC.swift */,
 				DBFBDC111D639DF4005AC1C8 /* Assets.xcassets */,
 				DBFBDC131D639DF4005AC1C8 /* LaunchScreen.storyboard */,
 				DBFBDC161D639DF4005AC1C8 /* Info.plist */,
@@ -74,6 +103,7 @@
 				DBFBDC001D639DF4005AC1C8 /* Sources */,
 				DBFBDC011D639DF4005AC1C8 /* Frameworks */,
 				DBFBDC021D639DF4005AC1C8 /* Resources */,
+				DBE1C2A41D63BDCA00B8BD55 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -122,6 +152,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBE1C2AB1D63BF7E00B8BD55 /* TwitterKitResources.bundle in Resources */,
 				DBFBDC151D639DF4005AC1C8 /* LaunchScreen.storyboard in Resources */,
 				DBFBDC121D639DF4005AC1C8 /* Assets.xcassets in Resources */,
 				DBFBDC0D1D639DF4005AC1C8 /* Main.storyboard in Resources */,
@@ -130,11 +161,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DBE1C2A41D63BDCA00B8BD55 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run cafcc8c3505c750d8193b6a17698e4ac5905c925 c092eed6fe3a816d3e0b7125336f68413de073e71e65398901f1fd7a3bd15138";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DBFBDC001D639DF4005AC1C8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBBE0C751D70BACE00D22920 /* AccountInfoVC.swift in Sources */,
+				DBE1C2B11D63C1C300B8BD55 /* TwitterFeedVC.swift in Sources */,
 				DBFBDC101D639DF4005AC1C8 /* myMunicipality.xcdatamodeld in Sources */,
 				DBFBDC081D639DF4005AC1C8 /* AppDelegate.swift in Sources */,
 			);
@@ -249,6 +298,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = myMunicipality/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = karabomoloi.myMunicipality;
@@ -260,6 +314,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = myMunicipality/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = karabomoloi.myMunicipality;
@@ -286,6 +345,7 @@
 				DBFBDC1B1D639DF4005AC1C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

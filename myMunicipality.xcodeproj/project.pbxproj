@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB66638A1D72289C0063F382 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6663891D72289C0063F382 /* TableViewController.swift */; };
 		DBBE0C751D70BACE00D22920 /* AccountInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBE0C741D70BACE00D22920 /* AccountInfoVC.swift */; };
 		DBE1C2A91D63BF7E00B8BD55 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE1C2A51D63BF7E00B8BD55 /* Fabric.framework */; };
 		DBE1C2AA1D63BF7E00B8BD55 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE1C2A61D63BF7E00B8BD55 /* TwitterKit.framework */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB6663891D72289C0063F382 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		DBBE0C741D70BACE00D22920 /* AccountInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountInfoVC.swift; sourceTree = "<group>"; };
 		DBE1C2A51D63BF7E00B8BD55 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		DBE1C2A61D63BF7E00B8BD55 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				DBFBDC071D639DF4005AC1C8 /* AppDelegate.swift */,
 				DBFBDC0B1D639DF4005AC1C8 /* Main.storyboard */,
 				DBBE0C741D70BACE00D22920 /* AccountInfoVC.swift */,
+				DB6663891D72289C0063F382 /* TableViewController.swift */,
 				DBFBDC111D639DF4005AC1C8 /* Assets.xcassets */,
 				DBFBDC131D639DF4005AC1C8 /* LaunchScreen.storyboard */,
 				DBFBDC161D639DF4005AC1C8 /* Info.plist */,
@@ -185,6 +188,7 @@
 				DBBE0C751D70BACE00D22920 /* AccountInfoVC.swift in Sources */,
 				DBE1C2B11D63C1C300B8BD55 /* TwitterFeedVC.swift in Sources */,
 				DBFBDC101D639DF4005AC1C8 /* myMunicipality.xcdatamodeld in Sources */,
+				DB66638A1D72289C0063F382 /* TableViewController.swift in Sources */,
 				DBFBDC081D639DF4005AC1C8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

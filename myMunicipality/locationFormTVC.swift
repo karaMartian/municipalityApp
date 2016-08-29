@@ -7,10 +7,16 @@
 //
 
 import UIKit
+import MapKit
+import CoreLocation
 
 class locationFormTVC: UITableViewController {
     
     var catTitle: String!
+    
+    @IBOutlet weak var myLocationMV: MKMapView!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
